@@ -1,0 +1,20 @@
+[tasks.init]
+env_files = [".env"]
+script = '''
+#!/bin/bash
+terraform init
+'''
+
+[tasks.plan]
+env_files = [".env"]
+script = '''
+#!/bin/bash
+terraform plan
+'''
+
+[tasks.apply]
+env_files = [".env"]
+script = '''
+#!/bin/bash
+terraform apply
+'''
